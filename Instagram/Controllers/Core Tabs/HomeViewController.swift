@@ -21,6 +21,7 @@ class HomeViewController: UIViewController {
         if Auth.auth().currentUser == nil {
             let loginVC = LoginViewController()
             loginVC.modalPresentationStyle = .fullScreen
+//            loginVC.modalPresentationStyle = .popover
             present(loginVC,animated:false)
         }
     }
