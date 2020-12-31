@@ -75,21 +75,61 @@ class RegistrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        RegisterButton.addTarget(self, action: #selector(didTapRegister), for: .touchUpInside)
+        usernameField.delegate = self
+        EmailField.delegate = self
+        passwordField.delegate = self
+        
         view.addSubview(usernameField)
         view.addSubview(EmailField)
         view.addSubview(passwordField)
         view.addSubview(RegisterButton)
+    
+        
     }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        usernameField.frame = CGRect(x: 20, y: view.safeAreaInsets.top + 20, width:view.width - 40, height: 52)
+        usernameField.frame = CGRect(x: 20, y: view.safeAreaInsets.top + 100, width:view.width - 40, height: 52)
         EmailField.frame = CGRect(x: 20, y: usernameField.bottom + 20, width:view.width - 40, height: 52)
         passwordField.frame = CGRect(x: 20, y: EmailField.bottom + 20, width:view.width - 40, height: 52)
         RegisterButton.frame = CGRect(x: 20, y: passwordField.bottom + 20, width:view.width - 40, height: 52)
     }
     
+    @objc private func didTapRegister(){
+        // hide keyboard
+        usernameField.resignFirstResponder()
+        EmailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+        
+        guard let email = EmailField.text, !email.isEmpty,
+              let username =  usernameField.text ,!username.isEmpty,
+              let password = passwordField.text ,!password.isEmpty, password.count >= 8 else  {
+            return
+        }
+        AuthManager.shared.registerNewUser(username: username, email: email, password: password) { (registered) in
+            DispatchQueue.main.async {
+                if registered {
+                    
+                }
+            }
+        }
+    }
 
    
 
+}
+extension RegistrationViewController:UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameField {
+            EmailField.becomeFirstResponder()
+        }
+        else if textField == EmailField {
+            passwordField.becomeFirstResponder()
+        }else {
+            didTapRegister()
+        }
+        return true
+    }
+    
 }
