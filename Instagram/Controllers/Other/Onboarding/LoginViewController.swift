@@ -44,7 +44,6 @@ class LoginViewController: UIViewController {
         field.layer.borderWidth = 1.0
         field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
-        
     }()
     
     private let  loginButton: UIButton = {
@@ -166,6 +165,7 @@ class LoginViewController: UIViewController {
     }
     
     @objc private func didTapLoginButton(){
+        print("hello")
         passwordEmailField.resignFirstResponder()
         usernameEmailField.resignFirstResponder()
      
