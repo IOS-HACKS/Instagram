@@ -12,6 +12,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Crashlytics'
 pod 'Firebase/Storage'
 pod 'Firebase/Database'
+pod 'SDWebImage'
 
 
 
