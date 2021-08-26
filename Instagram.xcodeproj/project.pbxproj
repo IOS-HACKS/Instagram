@@ -14,6 +14,10 @@
 		72A4BC2D26D418430028ADC5 /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC2C26D418430028ADC5 /* IGFeedPostHeaderTableViewCell.swift */; };
 		72A4BC2F26D418620028ADC5 /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC2E26D418620028ADC5 /* IGFeedPostActionsTableViewCell.swift */; };
 		72A4BC3126D4188D0028ADC5 /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3026D4188D0028ADC5 /* IGFeedPostGeneralTableViewCell.swift */; };
+		72A4BC3326D6B6580028ADC5 /* FormTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3226D6B6580028ADC5 /* FormTableViewCell.swift */; };
+		72A4BC3626D7AAB80028ADC5 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3526D7AAB80028ADC5 /* PhotoCollectionViewCell.swift */; };
+		72A4BC3826D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3726D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift */; };
+		72A4BC3A26D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3926D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift */; };
 		72E675C425738CE100A1C852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E675C325738CE100A1C852 /* AppDelegate.swift */; };
 		72E675C625738CE100A1C852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E675C525738CE100A1C852 /* SceneDelegate.swift */; };
 		72E675C825738CE100A1C852 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E675C725738CE100A1C852 /* HomeViewController.swift */; };
@@ -77,6 +81,10 @@
 		72A4BC2C26D418430028ADC5 /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		72A4BC2E26D418620028ADC5 /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
 		72A4BC3026D4188D0028ADC5 /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		72A4BC3226D6B6580028ADC5 /* FormTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewCell.swift; sourceTree = "<group>"; };
+		72A4BC3526D7AAB80028ADC5 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		72A4BC3726D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		72A4BC3926D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		72E675C025738CE100A1C852 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E675C325738CE100A1C852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E675C525738CE100A1C852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				72A4BC2B26D417D50028ADC5 /* Home Feed */,
+				72A4BC3226D6B6580028ADC5 /* FormTableViewCell.swift */,
+				72A4BC3526D7AAB80028ADC5 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -170,6 +180,15 @@
 				72A4BC3026D4188D0028ADC5 /* IGFeedPostGeneralTableViewCell.swift */,
 			);
 			path = "Home Feed";
+			sourceTree = "<group>";
+		};
+		72A4BC3426D7AA6A0028ADC5 /* CollectionView Headers */ = {
+			isa = PBXGroup;
+			children = (
+				72A4BC3726D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift */,
+				72A4BC3926D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift */,
+			);
+			path = "CollectionView Headers";
 			sourceTree = "<group>";
 		};
 		72E675B725738CE100A1C852 = {
@@ -237,6 +256,7 @@
 		72E675F725738D3E00A1C852 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				72A4BC3426D7AA6A0028ADC5 /* CollectionView Headers */,
 				72A4BC2826D415BC0028ADC5 /* Cells */,
 				72E675CC25738CE200A1C852 /* Assets.xcassets */,
 				72E675FD25738DDD00A1C852 /* Storyboards */,
@@ -572,6 +592,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A4BC2D26D418430028ADC5 /* IGFeedPostHeaderTableViewCell.swift in Sources */,
+				72A4BC3626D7AAB80028ADC5 /* PhotoCollectionViewCell.swift in Sources */,
+				72A4BC3826D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				72A4BC2F26D418620028ADC5 /* IGFeedPostActionsTableViewCell.swift in Sources */,
 				72A4BC3126D4188D0028ADC5 /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				72E6762E25738FF200A1C852 /* EditProfileViewController.swift in Sources */,
@@ -580,6 +602,7 @@
 				72E6760725738EDD00A1C852 /* CameraViewController.swift in Sources */,
 				72E675C825738CE100A1C852 /* HomeViewController.swift in Sources */,
 				72E676F12576B82200A1C852 /* DatabaseManager.swift in Sources */,
+				72A4BC3A26D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift in Sources */,
 				72E6762425738F9F00A1C852 /* RegistrationViewController.swift in Sources */,
 				72E6762925738FC800A1C852 /* PostViewController.swift in Sources */,
 				72E6764B257390B400A1C852 /* PublishPostViewController.swift in Sources */,
@@ -594,6 +617,7 @@
 				72E676462573909A00A1C852 /* PostEditorViewController.swift in Sources */,
 				72E675C425738CE100A1C852 /* AppDelegate.swift in Sources */,
 				72E675C625738CE100A1C852 /* SceneDelegate.swift in Sources */,
+				72A4BC3326D6B6580028ADC5 /* FormTableViewCell.swift in Sources */,
 				72E676332573900800A1C852 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
