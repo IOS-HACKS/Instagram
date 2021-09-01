@@ -19,6 +19,8 @@
 		72A4BC3826D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3726D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		72A4BC3A26D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3926D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift */; };
 		72A4BC3C26D805A80028ADC5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3B26D805A80028ADC5 /* Models.swift */; };
+		72A4BC4026D9580A0028ADC5 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC3F26D9580A0028ADC5 /* ListViewController.swift */; };
+		72A4BC4226DEA3340028ADC5 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A4BC4126DEA3340028ADC5 /* UserFollowTableViewCell.swift */; };
 		72E675C425738CE100A1C852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E675C325738CE100A1C852 /* AppDelegate.swift */; };
 		72E675C625738CE100A1C852 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E675C525738CE100A1C852 /* SceneDelegate.swift */; };
 		72E675C825738CE100A1C852 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E675C725738CE100A1C852 /* HomeViewController.swift */; };
@@ -87,6 +89,8 @@
 		72A4BC3726D7AB2F0028ADC5 /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		72A4BC3926D7AB7F0028ADC5 /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
 		72A4BC3B26D805A80028ADC5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		72A4BC3F26D9580A0028ADC5 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		72A4BC4126DEA3340028ADC5 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		72E675C025738CE100A1C852 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E675C325738CE100A1C852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E675C525738CE100A1C852 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				72A4BC2B26D417D50028ADC5 /* Home Feed */,
 				72A4BC3226D6B6580028ADC5 /* FormTableViewCell.swift */,
 				72A4BC3526D7AAB80028ADC5 /* PhotoCollectionViewCell.swift */,
+				72A4BC4126DEA3340028ADC5 /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -336,6 +341,7 @@
 				72E676402573905F00A1C852 /* SearchResultViewController.swift */,
 				72E676452573909A00A1C852 /* PostEditorViewController.swift */,
 				72E6764A257390B400A1C852 /* PublishPostViewController.swift */,
+				72A4BC3F26D9580A0028ADC5 /* ListViewController.swift */,
 			);
 			path = Genaral;
 			sourceTree = "<group>";
@@ -602,6 +608,8 @@
 				72E6762E25738FF200A1C852 /* EditProfileViewController.swift in Sources */,
 				72E676F82576B91200A1C852 /* AuthManager.swift in Sources */,
 				72E6760225738EB400A1C852 /* ExploreViewController.swift in Sources */,
+				72A4BC4026D9580A0028ADC5 /* ListViewController.swift in Sources */,
+				72A4BC4226DEA3340028ADC5 /* UserFollowTableViewCell.swift in Sources */,
 				72E6760725738EDD00A1C852 /* CameraViewController.swift in Sources */,
 				72E675C825738CE100A1C852 /* HomeViewController.swift in Sources */,
 				72E676F12576B82200A1C852 /* DatabaseManager.swift in Sources */,
